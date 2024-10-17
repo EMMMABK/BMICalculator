@@ -4,11 +4,11 @@ A simple JavaFX application for calculating the Body Mass Index. This project wi
 
 ## Screenshots
 
-![BMI Calculator Screenshot]()
-![BMI Calculator Screenshot]()
-![BMI Calculator Screenshot]()
-![BMI Calculator Screenshot]()
-![BMI Calculator Screenshot]()
+![BMI Calculator Screenshot](./assets/bmi1.png)
+![BMI Calculator Screenshot](./assets/bmi1.png)
+![BMI Calculator Screenshot](./assets/bmi1.png)
+![BMI Calculator Screenshot](./assets/bmi1.png)
+![BMI Calculator Screenshot](./assets/bmi1.png)
 
 
 ## Features
