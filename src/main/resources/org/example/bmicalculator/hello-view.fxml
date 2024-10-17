@@ -1,16 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.bmicalculator.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bmicalculator.HelloController">
+   <children>
+      <MenuBar layoutX="31.0" layoutY="24.0" prefHeight="25.0" prefWidth="558.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#closeItem" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label contentDisplay="CENTER" layoutX="31.0" layoutY="60.0" prefHeight="48.0" prefWidth="260.0" text="  Input your weight (kg)">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text1" layoutX="45.0" layoutY="108.0" prefHeight="48.0" prefWidth="227.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <Label layoutX="46.0" layoutY="162.0" prefHeight="48.0" prefWidth="273.0" text="Input your height (meters)">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text2" layoutX="48.0" layoutY="223.0" prefHeight="55.0" prefWidth="227.0">
+         <font>
+            <Font size="23.0" />
+         </font></TextField>
+      <Label layoutX="392.0" layoutY="60.0" prefHeight="48.0" prefWidth="156.0" text="BMI status:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="162.0" prefHeight="48.0" prefWidth="172.0" text="BMI calculation:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="229.0" layoutY="309.0" mnemonicParsing="false" onAction="#onClickButton" prefHeight="63.0" prefWidth="180.0" text="Click">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Label fx:id="Result" layoutX="395.0" layoutY="104.0" prefHeight="48.0" prefWidth="149.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="396.0" layoutY="223.0" prefHeight="48.0" prefWidth="149.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
