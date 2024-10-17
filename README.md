@@ -39,7 +39,7 @@ The project includes:
 
 # Explanation
 
-
+Below is a simple JavaFX application-a BMI Calculator-Spring Boot application managed by the class HelloController, including UI elements wired with the use of @FXML. The implemented methods are: the clearFields() that cleans the text fields and labels; closeItem() to let the user close the application; showHelp() to instruct the user on how to input weight and height; and onClickButton() retrieves the weight and height from the text fields and then converts these into double variables, after which the computation of BMI is performed as bmi = weight / height², showing thereafter the computed value of BMI. This program classifies the result using calculated BMI as follows: "Underweight" in the case of less than 18.5, "Normal" from 18.5 up to 24.9, "Overweight" from 25 to 29.9, and "Obesity" if 30 or higher. The program would catch a `NumberFormatException`-in the case of invalid input, for instance, non-numeric input-and set an appropriate message in the label, asking a user to enter correct data. In order to implement this application, there has to be an FXML file that will define the UI with appropriate components: text fields, labels, and buttons. Besides, it should provide the `Main` class, which would perform a launch of this JavaFX application-it needs to load an FXML file, set up the scene, and show the primary stage where users will be able to interact with the provided interface of a BMI calculator.
 
 ## Usage
 
