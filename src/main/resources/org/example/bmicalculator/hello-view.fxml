@@ -15,11 +15,7 @@
          <menus>
             <Menu mnemonicParsing="false" text="File">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#closeItem" text="Close" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Edit">
-               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#closeItem" text="Exit" />
                   <MenuItem mnemonicParsing="false" onAction="#clearFields" text="Clear" />
                </items>
             </Menu>
