@@ -9,7 +9,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 500);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 500); // I did size for my window
         stage.setTitle("BMI Calculator");
         stage.setScene(scene);
         stage.show();
